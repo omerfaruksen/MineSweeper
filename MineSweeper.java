@@ -102,7 +102,7 @@ public  class MineSweeper {
             if((col>0)&&(this.map[row][col-1].equals("*"))){
                 mayinsayisi++;
             }
-            if ((row>0 && col>0)&&(this.map[row-1][col-1].equals("*"))){
+            if ((row<nRow-1 && col>0)&&(this.map[row+1][col-1].equals("*"))){
                 mayinsayisi++;
             }
             if ((row>0)&&(this.map[row-1][col].equals("*"))){
